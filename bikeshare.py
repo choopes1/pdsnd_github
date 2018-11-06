@@ -1,3 +1,6 @@
+# Explore US Bikeshare Data - Udacity PDSND Project
+# Created by Craig Hoopes on 10/10/2018 using Python 3.7
+
 import time
 import pandas as pd
 import numpy as np
