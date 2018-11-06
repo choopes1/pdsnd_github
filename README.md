@@ -59,4 +59,8 @@ The code computes and displays the following statistics, based on raw input from
 2. [csv datasets](https://drive.google.com/drive/folders/1IHiVh0hog0Bdnv9xLNWBfIvuLmui9VOz)
 
 ### Credits
-<https://github.com/xhlow/udacity-bikeshare-project>
+README format:  
+<https://github.com/xhlow/udacity-bikeshare-project>  
+
+Convert seconds to days, hours, minutes, and seconds:  
+<https://stackoverflow.com/questions/775049/how-do-i-convert-seconds-to-hours-minutes-and-seconds>
