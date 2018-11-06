@@ -3,6 +3,9 @@
 
 ## **Using Python to Explore US Bikeshare Data**
 
+### Requirements
+The Python script was created using Python 3.7, which can be installed with the Anaconda installer [here](https://www.anaconda.com/download/#windows).
+
 ### Description
 I created this Python script to explore data related to bicycle-sharing systems for three cities - Chicago, New York City, and Washington.  This was a project for the Udacity Programming for Data Science Nanodegree (PDSND).
 
