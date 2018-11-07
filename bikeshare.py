@@ -7,6 +7,8 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+valid_months = ['january', 'february', 'march', 'april', 'may', 'june']
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -45,7 +47,7 @@ def get_filters():
         while True:
             month = input("\nWhich month?  January, February, March, April, May, or June?\n")
             month = month.lower()
-            if month not in ('january', 'february', 'march', 'april', 'may', 'june'):
+            if month not in valid_months:
                 print("Please enter a valid month.\n")
                 continue
             else:
@@ -90,7 +92,7 @@ def load_data(city, month, day):
     # filter by month if applicable
     if month != 'all':
         # use the index of the months list to get the corresponding int
-        months = ['january', 'february', 'march', 'april', 'may', 'june']
+        months = valid_months
         month = int(months.index(month) + 1)
 
         # filter by month to create the new dataframe
@@ -110,8 +112,8 @@ def time_stats(df):
     start_time = time.time()
 
     # TO DO: display the most common month
-    months = ['January', 'February', 'March', 'April', 'May', 'June']
-    popular_month = months[df['month'].mode()[0] - 1]
+    months = valid_months
+    popular_month = (months[df['month'].mode()[0] - 1]).title()
     print("Most popular month for traveling: ", popular_month)
 
     # TO DO: display the most common day of week
