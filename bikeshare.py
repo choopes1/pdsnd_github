@@ -94,16 +94,8 @@ def load_data(city, month, day):
 
     # Filter by month if applicable
     if month != 'all':
-<<<<<<< HEAD
-        # Use the index of the months list to get the corresponding int
-        months = ['january', 'february', 'march', 'april', 'may', 'june']
-||||||| merged common ancestors
-        # use the index of the months list to get the corresponding int
-        months = ['january', 'february', 'march', 'april', 'may', 'june']
-=======
         # use the index of the months list to get the corresponding int
         months = valid_months
->>>>>>> refactoring
         month = int(months.index(month) + 1)
 
         # Filter by month to create the new dataframe
